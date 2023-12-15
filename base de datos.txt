@@ -1,0 +1,40 @@
+create database HuellitasWeb;
+
+use HuellitasWeb;
+
+create table usuarios (idUsuario int auto_increment primary key,
+nombreDeUsuario varchar(256) not null, contraseñaDeUsuario
+varchar(256) not null, preguntaSeguridad varchar(256) not null,
+respuestaSeguridad varchar(256) not null);
+
+create table CasasTransito (dni varchar(30) primary key, nombre
+varchar(30) not null, apellido varchar(30) not null, telefono
+varchar(30) not null, email varchar(50) not null, domicilio
+varchar(50) not null, barrio varchar(30) not null, mascota varchar(1)
+not null, transitar varchar(1) not null, horas int not null, edadMenor
+int, cantidadAmbientes int not null);
+
+create table Adoptantes(dni varchar(30) primary key, nombre
+varchar(30) not null, apellido varchar(30) not null, telefono
+varchar(30) not null, email varchar(50) not null, domicilio
+varchar(50) not null, barrio varchar(30) not null, mascota varchar(1)
+not null, adoptar varchar(1) not null, horas int not null, edadMenor
+int, cantidadAmbientes int not null);
+
+create table Voluntarios (dni varchar(30) primary key, nombre
+varchar(30) not null, apellido varchar(30) not null, telefono
+varchar(30) not null, email varchar(50) not null, domicilio
+varchar(50) not null, barrio varchar(30) not null, rangoHorario
+varchar(1) not null, edad int not null);
+
+create table AdoptantesHistorias (id int auto_increment primary key,
+cuerpo varchar(1100) not null, imagen mediumblob not null, fecha date
+not null);
+
+create table noticias (id int auto_increment primary key, titulo
+varchar(150) not null, cuerpo varchar(1100) not null, fuente
+varchar(100) not null, fecha date not null);
+
+create table ArtPerroGato (id int auto_increment primary key, titulo
+varchar(150) not null, cuerpo varchar(1100) not null, fuente
+varchar(100) not null, fecha date not null);

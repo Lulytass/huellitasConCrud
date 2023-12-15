@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css" type="text/css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon-huellitas.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+    <title>Huellitas en rescate</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/huellitas.png" alt="logoHuellitas" class="logo-imagen">
+                <h2 class="logo-nombre"><a href="./index.php">Huellitas en rescate</a></h2>
+            </div>
+
+            <nav>
+                <a href="index.php" class="nav-link">Inicio</a>
+                <a href="adopta.html" class="nav-link">Adopta!</a>
+                <a href="donaciones.html" class="nav-link">Donaciones</a>
+                <a href="transito.html" class="nav-link">Transito</a>
+            </nav>
+
+        </header>
+
+        <div class="container-contenido">
+            <article>
+                <h1>¿De que se trata el voluntariado?</h1>
+                <img src="img/cuidadosPeludos.jpeg" alt="cuidados">
+                <h3>Descripción y objetivos</h3>
+                <ul>
+                    <li>Mejorar el bienestar de los animales de compañía que se encuentren en situación de abandono.</li>
+                    <li>Proporcionarle hogar temporal a dichos animales mientras encuentran un hogar definitivo..</li>
+                    <li>Gestionar las adopciones, buscando un hogar apropiado a sus necesidades y teniendo en cuenta las características buscadas por futuras familias interesadas en adoptar.</li>
+                    <li>Labor de concienciación sobre la problemática actual del abandono y superpoblación animal</li>
+                    <li>Dar a conocer la normativa vigente de tenencia de animales de compañía en la Región de Murcia.</li>
+                    <li>Control de población de gatos ferales en el Campus universitario de Espinardo.</li>
+                    <li>Reducir enfermedades contagiosas entre animales y zoonosis mediante la realización de calendarios vacunales y desparasitantes.</li>   
+                </ul>
+
+                <h3>Actividades y tareas</h3>
+                <ul>
+                    <li>Buscar hogar</li>
+                    <li>Actualizar información en redes sociales</li>
+                    <li>Llevarlo al veterinario y cumplir calendario de vacunación/desparasitación.</li>
+                    <li>Difusión</li>
+                    <li>Entrevista a adoptantes</li>
+                    <li>Participación de eventos puntuales en mercadillos solidarios y stand informativos.</li>
+                    <li>Una vez conocida la dinámica de la asociación, atender el teléfono de la protectora para atender los avisos y las solicitudes de adopción, además de contestar a la gente que demande información sobre la protectora.</li>
+                </ul>
+
+
+                <section class="formulario-registro">
+                    <h3>Registrate como voluntario!</h3> 
+                    <form method="post" action="voluntariados.php">
+                        <label class="textoCombo"> Ingrese su número de DNI:<input type="number" class="controls" name="dni" id="dniRegistro" min="11000" max="99999999" required> </label>
+                        <label class="textoCombo"> Ingrese su nombre:<input type="text" class="controls" name="Nombre" id="nombreRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese su apellido:<input type="text" class="controls" name="Apellido" id="apellidoRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese un número de teléfono:<input type="number" class="controls" name="Telefono" id="telefonoRegistro" min="11000" max="9999999999" required > </label>
+                        <label class="textoCombo"> Ingrese su e-mail:<input type="email" class="controls" name="Mail" id="mailRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese la dirección de su domicilio:<input type="text" class="controls" name="Domicilio" id="domicilioRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese su barrio:<input type="text" class="controls" name="Barrio" id="barrioRegistro" required > </label>
+                        <label class="textoCombo"> Disponibilidad:<select class="opciones" name="Horario" id="horarioRegistro" required>
+                            <option value="1"> Por la mañana </option>
+                            <option value="2"> Por la tarde </option>
+                            <option value="3"> Full time </option>
+                        </select> </label>
+                        <label class="textoCombo"> Ingrese su edad:<input type="number" class="controls" name="Edad" id="edadRegistro" min="16" max="85" required> </label>
+                        <label> Para continuar, acepte los <a href="#"><b>Terminos y condiciones</b></a> por favor </label>
+                        <label> <input type="checkbox" class="casillaRegistro" required> Acepto los términos y condiciones </label>
+                        <!-- Mensaje de advertencia (inicialmente oculto) -->
+                        <p id="mensajeNombreIncorrecto" class="mensaje-error" style="display: none;">
+                            El campo solo debe contener letras.
+                        </p>
+                        <input type="submit" class="botonRegistro"  value="Enviar formulario">
+                    </form>
+                </section>
+            </article>
+        </div>
+        <footer>
+            <div class="container_footer">
+                <div class="box_footer">
+                    <div class="logo">
+                        <img src="img/huellitas.png" alt="huellitasFooter">
+                        
+                    </div>
+                    <div class="terms">
+                        <p>
+                            <b>Por que sacar una huellita de la calle...</b>
+                        </p>
+                            <p>
+                                <b>Es llevar una huellita de por vida.</b>
+                            </p>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <h2>Encontranos en nuestras redes sociales!</h2>
+                        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+
+                <div class="box_footer">
+                    <h2>Nuestra web!</h2>
+                    <a href="adopta.html" class="nav-link">Adopta!</a>
+                    <a href="donaciones.html" class="nav-link">Donaciones</a>
+                    <a href="transito.html" class="nav-link">Transito</a>
+                    <a href="voluntariados.html" class="nav-link">Voluntariados</a>
+                </div>
+            </div>
+
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2023 <b>Huellitas en Rescate</b></p>
+                </div>
+       </footer>
+
+
+
+        <script src="./validarCampos.js"></script>
+    </body>
+</html>

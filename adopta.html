@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css" type="text/css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon-huellitas.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+    <title>Huellitas en rescate</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/huellitas.png" alt="logoHuellitas" class="logo-imagen">
+                <h2 class="logo-nombre"><a href="./index.php">Huellitas en rescate</a></h2>
+            </div>
+
+            
+            <nav>
+                <a href="index.php" class="nav-link">Inicio</a>
+                <a href="transito.html" class="nav-link">Transito</a>
+                <a href="donaciones.html" class="nav-link">Donaciones</a>
+                <a href="voluntariados.html" class="nav-link">Voluntariados</a>
+            </nav>
+
+        </header>
+        
+        <div class="container-contenido">
+            <article>
+                <h1>Requisitos para adopar a una huellita.</h1>
+                    <h3><b>Adoptar es un acto de responsabilidad y compromiso por lo que es importante que estes capacitado para hacerlo. Un perro puede vivir entre 14 y 18 años y durante todo ese tiempo dependerá de vos.</b></h3>
+                    <p>Algunas cuestiones para tener en cuenta son el espacio disponible de tu casa, el tiempo que tengas para brindarle compañía, actividad física y cuidado. También los costos asociados a su alimentación, atención veterinaria y estadía durante tus vacaciones.</p>
+
+                <h4>Nuestros requisitos</h4>
+                <ul>
+                    <li>Los animales se entregan luego de una charla telefónica orientada a corroborar que se cumplen con las normas básicas de tenencia responsable.</li>
+                    <li>Los adoptantes deberán firmar un contrato de adopción donde consten sus datos personales y donde se comprometen a brindar los cuidados necesarios.</li>
+                    <li>Los animales mayores a 7 meses serán dados en adopción ya castrados. El adoptante de un cachorro de menor edad asumirá la responsabilidad y el compromiso de castrarlo entre los 7 meses y el año de edad. La castración es un requisito prioritario para concretar la adopción como parte de la tenencia responsable de un animal de compañia.</li>
+                    <li>Nos reservamos el derecho de dar o no un animal en adopción de acuerdo a si se cumplen o no los requerimientos que nuestra ONG considera.</li>
+                    <li>Las adopciones se limitan geográficamente a Capital Federal y Gran Buenos Aires, Argentina (sujeto a consideración)</li>
+                    <li>Los datos suministrados por el solicitante son confidenciales y de acceso restringido, para el uso exclusivo de los procesos de adopción de la Asociación Civil Proyecto 4 Patas y no serán transferidos a terceros bajo ninguna circunstancia.</li>
+                </ul>
+                <section class="formulario-registro">
+                    <h3>Registrate como Adoptante!</h3> 
+                    <form method="post" action="adopta.php">
+                        <label class="textoCombo"> Ingrese su número de DNI:<input type="number" class="controls" name="dni" id="dniRegistro" min="1" max="99999999" required> </label>
+                        <label class="textoCombo"> Ingrese su nombre:<input type="text" class="controls" name="Nombre" id="nombreRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese su apellido:<input type="text" class="controls" name="Apellido" id="apellidoRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese un número de teléfono:<input type="number" class="controls" name="Telefono" id="telefonoRegistro" min="1" max="9999999999" required > </label>
+                        <label class="textoCombo"> Ingrese su e-mail:<input type="email" class="controls" name="Mail" id="mailRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese la dirección de su domicilio:<input type="text" class="controls" name="Domicilio" id="domicilioRegistro" required > </label>
+                        <label class="textoCombo"> Ingrese su barrio:<input type="text" class="controls" name="Barrio" id="barrioRegistro" required > </label>
+                        <label class="textoCombo"> Tiene Mascotas?<select class="opciones" name="Mascotas" id="tieneMaascotas" required>
+                            <option value="0"> No </option>
+                            <option value="1"> Perro </option>
+                            <option value="2"> Gato </option>
+                            <option value="3"> Ambas </option>
+                        </select> </label>
+                        <label class="textoCombo"> Que mascota quiere Adoptar: <select class="opciones" name="adoptar" id="mascotaATransitar" required>
+                            <option value="1"> Perro </option>
+                            <option value="2"> Gato </option>
+                            <option value="3"> Ambas </option>
+                        </select> </label>
+                        <label class="textoCombo"> Cuantas horas estaria la mascota sola:<input type="number" class="controls" name="horasSolo" id="horasSolo" min="0" max="24" required> </label>
+                        <label class="textoCombo"> En caso de convivir con niños edad del menor:<input type="number" class="controls" name="edadMenor" id="edadMenor" min="0" max="21" required> </label>
+                        <label class="textoCombo"> Cuantos ambientes tiene la casa?<select class="opciones" name="ambientes" id="ambientes" required>
+                            <option value="1"> Uno </option>
+                            <option value="2"> Dos </option>
+                            <option value="3"> Tres </option>
+                            <option value="4"> Cuatro o + </option>
+                        </select> </label>
+                        <label> Para continuar, acepte los <a href="#"><b>Terminos y condiciones</b></a> por favor </label>
+                        <label> <input type="checkbox" class="casillaRegistro" required> Acepto los términos y condiciones </label>
+                        <!-- Mensaje de advertencia (inicialmente oculto) -->
+                        <p id="mensajeNombreIncorrecto" class="mensaje-error" style="display: none;">
+                            El campo solo debe contener letras.
+                        </p>
+                        <input type="submit" class="botonRegistro"  value="Enviar formulario">
+                    </form>
+                </section>
+            </article>
+        </div>
+
+        <footer>
+            <div class="container_footer">
+                <div class="box_footer">
+                    <div class="logo">
+                        <img src="img/huellitas.png" alt="huellitasFooter">
+                        
+                    </div>
+                    <div class="terms">
+                        <p>
+                            <b>Por que sacar una huellita de la calle...</b>
+                        </p>
+                            <p>
+                                <b>Es llevar una huellita de por vida.</b>
+                            </p>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <h2>Encontranos en nuestras redes sociales!</h2>
+                        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+
+                <div class="box_footer">
+                    <h2>Nuestra web!</h2>
+                    <a href="adopta.html" class="nav-link">Adopta!</a>
+                    <a href="donaciones.html" class="nav-link">Donaciones</a>
+                    <a href="transito.html" class="nav-link">Transito</a>
+                    <a href="voluntariados.html" class="nav-link">Voluntariados</a>
+                </div>
+            </div>
+
+                <div class="box__copyright">
+                    <hr>
+                    <p>Todos los derechos reservados © 2023 <b>Huellitas en Rescate</b></p>
+                </div>
+       </footer>
+        <script src="./validarCampos.js"></script>
+    </body>
+</html>

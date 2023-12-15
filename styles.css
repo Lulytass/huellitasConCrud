@@ -1,0 +1,351 @@
+body{
+    font-family: Calibri;
+    margin: 0;
+}
+
+/*-------------------ENCABEZADO-------------------*/
+
+header{
+    display:flex;
+    height: 70px;
+    background-color: rgb(211,243,106);
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right:10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+nav a:last-child{
+    margin-right: 20px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/*-------------------ENCABEZADO-------------------*/
+
+/*-------------------Contenido principal-------------------*/
+.container-contenido{
+    width: 1200px;
+    margin:auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(234,233,226);
+    position: relative;
+}
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+article img{
+    width: 400px;
+    height: 202px;
+    float: right;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.michis, .artPerroGato{
+    width: 400px;
+    height: 202px;
+    float: left;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+/*-------------------Contenido principal-------------------*/
+
+/*-------------------ASIDE DE LOS ADOPTADOS-------------------*/
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside .container-aside{
+    width: 320px;
+    box-shadow: 0 0 20px -20px black;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.container-aside img{
+    width: 100%;
+}
+
+.container-aside h2,
+.container-aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+/*-------------------ASIDE DE LOS ADOPTADOS-------------------*/
+
+/*-------------------A PARTIR DE ACA EMPIEZA LA SECCION VOLUNTARIADOS-------------------*/
+
+.formulario-registro{
+    width: 500px;
+    background-color: rgb(205,223,227);
+    padding:30px;
+    margin:auto;
+    margin-top:100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+form{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.textoCombo{
+    color: black;
+    align-items: center;
+}
+
+
+.formulario-registro h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    position: relative; 
+}
+
+input[type=number]{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.controls{
+    align-content: center;
+    width: 70%;
+    background-color: rgb(205,223,227);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
+
+::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+
+
+}
+
+.formulario-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.formulario-registro a{
+    color: black;
+    text-decoration: none;
+}
+
+.formulario-registro a:hover{
+    color:black
+}
+
+.formulario-registro .botonRegistro{
+    width: 100%;
+    background-color: rgb(211,243,106);
+    border:none;
+    padding:12px;
+    color:black;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+select{
+    display: block;
+    padding: 15px;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+}
+
+.textoDonacion{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.donacionMp {
+    text-align: center;
+    margin-top: 10px; 
+    align-items: center;
+}
+
+.container-imagen{
+    justify-content: center;
+    display: flex; 
+}
+
+.imagenPrueba{
+    height: 450px;
+    width: 700px;
+}
+
+.tituloRegistro{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/*-------------------A PARTIR DE ACA EMPIEZA LA SECCION EDICION-------------------*/
+.textarea{
+    resize: none;
+    width: 400px;
+    height: 180px;
+    border: 2px solid #000
+}
+
+
+.opciones{
+    position: relative;
+    padding: 20px;
+}
+
+.opcionesSelect{
+    width: 500px;
+    background-color: rgb(205,223,227);
+    padding:30px;
+    margin:auto;
+    margin-top:100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+/*Footer Desing*/
+footer{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 15px;
+    background-color: rgb(211,243,106);
+    background-size: cover;
+   
+
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box_footer{
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box_footer .logo img{
+    height: 100px;
+    width: 105px;
+}
+
+.box_footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500em;
+    color: black;
+    font-size: 18px;
+
+}
+
+.box_footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 150px;   
+}
+
+.box_footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 15em;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box_footer a:hover{
+    opacity: 0.8;
+    color: blue;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
